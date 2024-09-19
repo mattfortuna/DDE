@@ -83,26 +83,16 @@ To run the application, follow these steps:
 ### 5. **CI/CD Pipeline**
    The project includes a GitHub Actions CI/CD pipeline that automatically runs tests on every push to the `main` branch.
 
-## Development
+## Approach and Assumptions
 
-If you want to modify the code or add new features, here’s how to get started:
-
-1. **Linting**: Before committing code, run the linter to check for any issues.
-
-   ```bash
-   npm run lint
-   ```
-
-2. **Testing**: Ensure that the tests pass before submitting any changes.
-
-   ```bash
-   npm test
-   ```
-
-3. **Running in a Different Environment**: The application can be configured to run in different environments (development, production) using environment variables in your terminal.
+- Assuming there is a basic structure that mimics the sample.txt file, although it is relatively flexible.
+- My approach was to create a rudimentary document parser using basic js and node functionality.
+- I added a decent amount of production required support like CI/CD, linting, logging capability, and unit tests.
 
 ## Future Enhancements
 
 - **Support for PDF and DOCX Files**: Currently, only `.txt` files are supported. Future versions could support additional file types.
 - **Advanced Entity Extraction**: Use natural language processing (NLP) libraries to improve entity extraction.
-- **Web Interface**: Add a front-end to upload and process documents via a web interface.
+- **Web Interface**: Add a front-end to upload and process documents via a web interface with a more broken down file structure (ideally React).
+- **Monitoring**: Add sentry for monitoring and improved error handling.
+- **Toggle Env**: Adding optional env environments for running tests, lint configs, and logging.
